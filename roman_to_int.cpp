@@ -60,18 +60,15 @@ int romanToInt(string s) {
                 result += part;
                 part = 100;
             }
-            
             break;
         case 'D':
             if(prev == 'C')
                 part = 400;
-            else if(prev == 'M')
+            else
             {
                 result += part;
                 part = 500;
             }
-            else 
-                part = 500;
             break;
         case 'M':
             if(prev == 'C')
